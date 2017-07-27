@@ -1,0 +1,14 @@
+{
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "application/controllers",
+            "Models\\": "application/models",
+            "Library\\": "library/",
+            "Unit\\" : "tests/unit/",
+            "Functional\\" : "tests/functional/",
+            "Acceptance\\" : "tests/acceptance/",
+            "Phantomjs\\" : "tests/phantomjs/"
+        }
+    }
+}

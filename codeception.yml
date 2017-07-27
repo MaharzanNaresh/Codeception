@@ -1,0 +1,22 @@
+actor: Tester
+paths:
+    tests: tests
+    log: tests/_output
+    data: tests/_data
+    helpers: tests/_support
+settings:
+    bootstrap: _bootstrap.php
+    colors: true
+    memory_limit: 1024M
+modules:
+    config:
+        Db:
+            dsn: 'mysql:host=localhost;dbname=codeception_demo'
+            user: 'root'
+            password: 'naresh'
+            dump: tests/_data/db.sql
+coverage:
+    enabled: true
+    include:
+        - application/models/*
+        - library/*

@@ -1,0 +1,30 @@
+class_name: PhantomjsTester
+modules:
+    enabled: [WebDriver, Asserts]
+    config:
+        WebDriver:
+            browser: 'firefox'
+            url: 'http://test.codeception.com'
+
+env:
+    phantom:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'phantomjs'
+                    capabilities:
+                        webStorageEnabled: true
+    chrome:
+         modules:
+            config:
+                WebDriver:
+                    browser: 'chrome'
+                    capabilities:
+                        handlesAlerts: true
+    firefox:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'chrome'
+                    capabilities:
+                        handlesAlerts: true

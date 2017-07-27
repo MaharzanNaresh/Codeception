@@ -1,0 +1,9 @@
+.idea/
+config/application.ini
+tests/unit/*
+tests/_support/*
+tests/_output/*
+tests/acceptance/*
+tests/functional/*
+tests/phantomjs/*
+tests/*.suite.yml
